@@ -10,7 +10,7 @@ def index():
 def my_form_post():
     text = request.form['text']
     if text.isdigit() == True:
-        if int(text) >= 38:
+        if float(text) >= 38:
             return render_template("wuhan.html")
 
         else:
